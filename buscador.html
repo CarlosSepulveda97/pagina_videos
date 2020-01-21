@@ -9,7 +9,7 @@
 
 <style>
     body{
-        font-family: 'Muli', sans-serif;;
+        font-family: 'Muli', sans-serif;
         margin: 0px;
         background-color: #94d3ac;
     }
@@ -59,13 +59,40 @@
         display: flex;
         align-items: center;
         
+        
     }
     .header__menu--profile img{
+        
+        width: 80px;
         margin: 0px;
         
     }
     .header__menu--profile p{
+        font-size: 20px;
         margin: 0px;
+    }
+    
+    .main{
+        height: 300px;
+    }
+    .main__title{
+        color: white;
+        font-size: 25px;
+    }
+    .input{
+        background-color: rgba(255, 255, 255, 0.1);
+        border:2px solid white;
+        border-radius: 25px;
+        color: white;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        padding: 0px 20px;
+        width: 70%;
+        outline: none;
+    }
+    ::placeholder{
+        color: white;
     }
 </style>
 
@@ -82,6 +109,11 @@
                 <li><a href="/">Log Out</a></li>
             </ul>
         </div>
-    </header>    
+    </header> 
+    
+    <section>
+        <h2 class="main__title" >Qué deseas ver hoy?</h2>
+        <input class="input" type="text" placeholder="Buscar...">
+    </section>
 </body>
 </html>
